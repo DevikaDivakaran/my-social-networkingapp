@@ -1,0 +1,35 @@
+.contain {
+    height: 370px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 400px;
+    background-color: rgba(0,0,0,0.5) !important;
+    .title {
+      margin: 10px 0;
+    }
+  
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+     
+        min-width: 123px;
+        line-height: 20px;
+        color: white;
+        font-size: 13px;
+        font-family: 'Times new Roman';
+        font-weight: bolder;
+        border:none;
+  
+        cursor: pointer;
+    display: flex;
+    justify-content: center;
+    &:hover {
+      background-color: #357ae8;
+      border: none;
+    }
+    
+      }
+      
+    
+    
+  }

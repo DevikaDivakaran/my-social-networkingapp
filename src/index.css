@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('http://getwallpapers.com/wallpaper/full/a/5/d/544750.jpg');
+background-size: cover;
+background-repeat: no-repeat;
+color: white; color: #eee;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+perspective: 1000px;
+perspective-origin: 50% 50%;
+animation: animation 100s linear infinite;
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+body:hover {
+  background-image:url("http://www.zastavki.com/pictures/originals/2013/Nature__039052_.jpg");
+  
+
+}
