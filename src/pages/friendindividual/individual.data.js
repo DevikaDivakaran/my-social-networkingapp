@@ -1,9 +1,9 @@
 const INDIVIDUAL_DATA = [
     {
-      id: 1,
+      id: 0,
       title: 'Kim Namjoon',
       routeName: 'name1',
-      items: [
+      details_sections: [
         {
             gender: "male",
             "name": {

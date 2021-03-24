@@ -1,25 +1,38 @@
 import React from 'react';
 import INDIVIDUAL_DATA from './individual.data';
-import FriendView from '../../components/friendview/friendsdetails';
+import View from '../../components/friendview/View';
 
-class Details extends React.Component {
+class DetailsIndividual extends React.Component {
     constructor(props) {
         super(props);
        
         this.state = {
    
-           collections:INDIVIDUAL_DATA[this.props.match.params.id].items
+           collections:INDIVIDUAL_DATA[this.props.match.params.id].details_sections
         }
     }
     render() {
         const {collections} = this.state;
         return (<div className="details">
             {
-                collections.map(({id,title,imageUrl})=>(
-                    <FriendView key={id} title={title} imageUrl={imageUrl}></FriendView>
+                collections.map(({id,name,gender,state,country,email,phone,age,city,location,Dateofbirth,imageUrl})=>(
+                    <View 
+                    key={id}
+                    name={name} 
+                    gender={gender}
+                    state={state}
+                    country={country}
+                    email={email}
+                    phone={phone}
+                    age={age}
+                    city={city}
+                    location={location}
+                    Dateofbirth={Dateofbirth}
+                    imageUrl={imageUrl}
+                    ></View>
                 ))
             }
         </div>)
     }
    };
-   export default Details;
+   export default DetailsIndividual;

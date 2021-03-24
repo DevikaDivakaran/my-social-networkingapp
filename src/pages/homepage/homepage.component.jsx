@@ -38,7 +38,7 @@ render() {
      
         <a class="nav-link" href="homepage">Home</a>
       <Link to="/">
-        <button type="button" className="btn btn-outline-warning">Log Out</button>
+        <button type="button" className="btn btn-outline-danger">Log Out</button>
       </Link>
      
     

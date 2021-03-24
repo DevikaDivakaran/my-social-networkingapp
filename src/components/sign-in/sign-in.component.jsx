@@ -31,7 +31,7 @@ class SignIn extends React.Component {
 
     this.setState({ [name]: value });
   };
-  
+ 
 
   render() {
     
@@ -71,7 +71,7 @@ class SignIn extends React.Component {
                 <Link to='/homepage'>
           <button 
           type="button" 
-          class="btn btn-primary mr-1">Sign in</button>
+          class="btn btn-primary mr-1" >Sign in</button>
                 </Link>
                 <Link to="/homepage">
                 <button type="button" class="btn btn-primary mr-1" onClick={signInWithGoogle} isGoogleSignIn> Sign in with Google</button>
