@@ -31,12 +31,12 @@ render() {
   
        <div className="container">
         
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light">
   <a class="navbar-brand" href="homepage">My Space</a>
   
 
      
-        <a class="nav-link" href="homepage">Home</a>
+        <a className="nav-link" href="homepage">Home</a>
       <Link to="/">
         <button type="button" className="btn btn-outline-danger">Log Out</button>
       </Link>

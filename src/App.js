@@ -4,7 +4,7 @@ import  SignUpPage from './pages/signuppage/signuppage';
 import  SignInPage from './pages/signinpage/signinpage';
 import  DetailsIndividual from './pages/friendindividual/friendindividual.component';
 
-import {Route, Switch,  BrowserRouter as Router} from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route ,Redirect} from 'react-router-dom'; 
 import './App.css';
 import'bootstrap/dist/css/bootstrap.css';
 function App() {
@@ -12,10 +12,9 @@ function App() {
    
           <Switch>
             <Route exact path='/' component={SignInPage} />
-            <Route path="/signup" component={SignUpPage} />
-            <Route exact path="/details/:id" component={DetailsIndividual} />
-            
-            <Route path="/Homepage" component={HomePage} />
+            <Route path='/signup' component={SignUpPage} />
+            <Route exact path='/details/:id' component={DetailsIndividual} />
+            <Route path='/Homepage' component={HomePage} />
           </Switch>
      </Router>
   );

@@ -44,7 +44,7 @@ class SignIn extends React.Component {
       </nav>      
       <div >
        <div className="d-flex justify-content-center">
-         <h1 class="text-white" >Sign In</h1>
+         <h1 className="text-white" >Sign In</h1>
          </div>
 
       <div className="d-flex justify-content-center">

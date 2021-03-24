@@ -1,29 +1,30 @@
 import React from 'react';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
-import {Card} from 'react-bootstrap'
 
-const View = ({id,name,gender,state,country,email,phone,age,city,location,Dateofbirth,imageUrl}) => {
+const View = ({id,name,gender,city,state,country,age,email,phone,father,mother,occupation,imageUrl}) => {
   return (
     <div className="user-view">
-      <h1 className="name" >{name}</h1>
+      <br/>
+      <h1 className="text-white" >{name}</h1>
       <br/>
       <div className='image'
       style={{
-        backgroundImage: `url(${imageUrl})`, width:'600px',  height:'600px', backgroundRepeat:'repeat'
+        backgroundImage: `url(${imageUrl})`, width:'600px',  height:'400px'
       }}
       />
-      <div className='collection-footer'>
-        <h2 className='name'>Gender: {gender}</h2>
-        <h2 className='name'>State: {state}</h2>
-        <h2 className='name'>Country: {country}</h2>
-        <h2 className='name'>Email: {email}</h2>
-        <h2 className='name'>Phone: {phone}</h2>
-        <h2 className='name'>Age: {age}</h2>
-        <h2 className='name'>city: {city}</h2>
-        <h2 className='name'>Location: {location}</h2>
-        <h2 className='name'>Date of Birth: {Dateofbirth}</h2>
-
+      <div className='collection-footer'>     
+      <h3 className="text-white" >Id: {id}</h3>
+      <h3 className="text-white" >Gender: {gender}</h3>
+      <h3 className="text-white" >Age: {age}</h3>
+      <h3 className="text-white" >City: {city}</h3>
+      <h3 className="text-white" >State: {state}</h3>
+      <h3 className="text-white" >Country: {country}</h3>
+      <h3 className="text-white" >Occupation: {occupation}</h3>
+      <h3 className="text-white" >Fathers Name: {father}</h3>
+      <h3 className="text-white" > Mothers Name: {mother}</h3>
+      <h3 className="text-white">Email: {email}</h3>
+      <h3 className="text-white">Phone: {phone}</h3>
       </div>
     </div>
   );

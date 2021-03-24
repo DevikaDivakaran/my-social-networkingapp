@@ -21,9 +21,7 @@ class SignUp extends React.Component {
     event.preventDefault();
 
     const { displayName, email, password, confirmPassword } = this.state;
-    if (email ==  " "){
-      alert("enter the values");
-    }
+    
     if (password !== confirmPassword) {
       alert("passwords don't match");
       return;
@@ -78,21 +76,21 @@ class SignUp extends React.Component {
                     <input type="text" className="form-control" placeholder="First name" required/>
                 </div>
 
-                <div className="form-group">
+                <div className="form-group" onChange={this.handleChange}>
                     <label class="text-white">Last name</label>
                     <input type="text" className="form-control" placeholder="Last name" required/>
                 </div>
 
-                <div className="form-group">
+                <div className="form-group" onChange={this.handleChange}>
                     <label class="text-white">Email address</label>
                     <input type="email" className="form-control" placeholder="Enter email" required/>
                 </div>
 
-                <div className="form-group">
+                <div className="form-group" onChange={this.handleChange}>
                     <label class="text-white">Password</label>
                     <input type="password" className="form-control" placeholder="Enter password" required />
                 </div>
-                <div className="form-group">
+                <div className="form-group" onChange={this.handleChange}>
                     <label class="text-white">Confirm Password</label>
                     <input type="confirmpassword" className="form-control" placeholder="Confirm password" required />
                 </div>

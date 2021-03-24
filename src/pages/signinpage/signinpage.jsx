@@ -9,7 +9,6 @@ const SignInPage = () => (
   <div className='sign-in'>
     <SignIn />
     
-    <Route exact path='/signup' component={SignUpPage} />
   </div>
 );
 
